@@ -125,3 +125,7 @@ pub(crate) fn is_valid_sys_call_number(
     }
     false
 }
+
+pub fn syscall_names() -> &'static [&'static str] {
+    return native::SYS_CALL_NAME
+}
